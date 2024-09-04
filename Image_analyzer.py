@@ -7,12 +7,8 @@ import logging
 from datetime import datetime
 import os
 
-print(cv2.__version__)
-print(Image.__version__)
-print(np.__version__)
-
 # Creazione del file di log con la data odierna
-log_dir = r"C:\Users\Carlo\Desktop\Digital_forensics\Digital_Forensics_progetto\log"
+log_dir = r"C:\Users\Carlo\Desktop\Digital_Forensics_progetto\log"
 os.makedirs(log_dir, exist_ok=True)
 log_filename = datetime.now().strftime("log_%Y-%m-%d.txt")
 log_file_path = os.path.join(log_dir, log_filename)
@@ -202,7 +198,7 @@ def process_quantization():
 
 # Creazione della finestra principale
 root = tk.Tk()
-root.title("Image Cloning Detection with Template Matching")
+root.title("Image Analyzer")
 
 # Variabili per la GUI
 selected_file = tk.StringVar()
